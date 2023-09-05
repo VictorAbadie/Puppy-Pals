@@ -5,7 +5,15 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background: hsla(55, 90%, 67%, 1);
+
+  background: linear-gradient(90deg, hsla(55, 90%, 67%, 1) 0%, hsla(173, 87%, 59%, 1) 50%, hsla(327, 89%, 71%, 1) 100%);
+  
+  background: -moz-linear-gradient(90deg, hsla(55, 90%, 67%, 1) 0%, hsla(173, 87%, 59%, 1) 50%, hsla(327, 89%, 71%, 1) 100%);
+  
+  background: -webkit-linear-gradient(90deg, hsla(55, 90%, 67%, 1) 0%, hsla(173, 87%, 59%, 1) 50%, hsla(327, 89%, 71%, 1) 100%);
+  
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F7EA60", endColorstr="#3CF2DE", GradientType=1 );
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -29,6 +37,8 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  border: 15px solid grey
+  
 }
 
 h1 {
@@ -66,4 +76,16 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+p {
+color: black;
+}
+
+h2 {
+  color: black;
+}
+
+li {
+  color: black;
 }
